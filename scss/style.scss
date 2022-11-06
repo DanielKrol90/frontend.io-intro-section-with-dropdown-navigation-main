@@ -1,0 +1,42 @@
+:root {
+    // colors
+    --color-white: hsl(0, 0%, 98%);
+    --color-gray: hsl(0, 0%, 41%);
+    --color-black: hsl(0, 0%, 8%);
+
+    // fonts 
+    --font-family: 'Epilogue', sans-serif;
+}
+
+body {
+    background-color: var(--color-white);
+}
+
+
+
+// navbar links
+ul.navbar-nav {
+    
+    li.nav-item {
+        margin-left: 2rem;
+
+        a {
+            color: var(--color-gray);
+
+            &:hover {
+                color: var(--color-black);
+            }
+        }
+        .nav-link {
+
+            .btn-outline-dark {
+
+                &:hover {
+                    outline: solid black 2px;
+                    background-color: var(--color-white);
+                    color: var(--color-black);
+                }
+            }
+        }
+    }
+}
