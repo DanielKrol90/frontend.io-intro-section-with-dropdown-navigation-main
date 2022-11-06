@@ -36,10 +36,26 @@
                 Features
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item " href="#">Todo List</a></li>
-                <li><a class="dropdown-item" href="#">Calendar</a></li>
-                <li><a class="dropdown-item" href="#">Reminders</a></li>
-                <li><a class="dropdown-item" href="#">Planning</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="icon-nav" src="./images/icon-todo.svg" alt=""> Todo List
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="icon-nav" src="./images/icon-calendar.svg" alt=""> Calendar
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="icon-nav" src="./images/icon-reminders.svg" alt=""> Reminders
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="icon-nav" src="./images/icon-planning.svg" alt=""> Planning
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -74,20 +90,34 @@
       </div>
     </nav>
   </header>
+
   <main>
-    <section>
-      <h1>Make remote work</h1>
+    <div class="container d-flex justify-content-between">
+      <section class=" d-flex flex-column align-items-start justify-content-between">
+        <h1 class="display-1 fw-bolder lh-1 mt-5">Make remote work</h1>
 
-      <p>Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.</p>
+        <p class="w-75">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
 
-      <button class="btn btn-outline-dark" type="button"> Learn more</button>
+        <button class="btn btn-outline-dark" type="button">Learn more</button>
 
-    </section>
+        <div class="d-flex flex-row justify-content-between w-100">
+          <img class="mx-0" src="./images/client-databiz.svg" alt="databiz">
+          <img class="mx-0" src="./images/client-audiophile.svg" alt="audio phile">
+          <img class="mx-0" src="./images/client-meet.svg" alt="meet">
+          <img class="mx-0" src="./images/client-maker.svg" alt="maker">
+        </div>
 
-    <section>
+      </section>
 
-    </section>
+      <section class="mx-5">
+        <picture>
+          <source media="(min-width:375px)" srcset="./images/image-hero-desktop.png">
+          <img src="./images/image-hero-mobile.png" alt="men writing on laptop in yellow ball">
+        </picture>
+      </section>
+    </div>
+
   </main>
 
 

@@ -10,6 +10,8 @@
 
 body {
     background-color: var(--color-white);
+    height: 100vh;
+    width: 100vw;
 }
 
 // navbar links
@@ -27,18 +29,44 @@ ul.navbar-nav {
         }
         .nav-link {
 
+            .btn-outline-dark {
+
+                &:hover {
+                    outline: solid black 2px;
+                    background-color: var(--color-white);
+                    color: var(--color-black);
+                }
+            }
             .dropdown-toggle::after {
-                // icon change here
+                // here - change icon of menu
             }
         }
     }
+    .icon-nav {
+        padding-bottom: 6px;
+        padding-right: 5px;
+        
+    }
 }
 
-.btn-outline-dark {
+.container {
 
-    &:hover {
-        outline: solid black 2px;
-        background-color: var(--color-white);
-        color: var(--color-black);
+
+    .btn-outline-dark {
+    
+        &:hover {
+            outline: solid black 2px;
+            background-color: var(--color-black);
+            color: var(--color-white);
+        }
+    }
+    section {
+
+        picture {
+            
+            img {
+                height: 80vh;
+            }
+        }
     }
 }
