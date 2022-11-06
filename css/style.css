@@ -18,7 +18,7 @@ ul.navbar-nav li.nav-item a {
 ul.navbar-nav li.nav-item a:hover {
   color: var(--color-black);
 }
-ul.navbar-nav li.nav-item .nav-link .btn-outline-dark:hover {
+.btn-outline-dark:hover {
   outline: solid black 2px;
   background-color: var(--color-white);
   color: var(--color-black);

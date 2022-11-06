@@ -12,8 +12,6 @@ body {
     background-color: var(--color-white);
 }
 
-
-
 // navbar links
 ul.navbar-nav {
     
@@ -29,14 +27,18 @@ ul.navbar-nav {
         }
         .nav-link {
 
-            .btn-outline-dark {
-
-                &:hover {
-                    outline: solid black 2px;
-                    background-color: var(--color-white);
-                    color: var(--color-black);
-                }
+            .dropdown-toggle::after {
+                // icon change here
             }
         }
+    }
+}
+
+.btn-outline-dark {
+
+    &:hover {
+        outline: solid black 2px;
+        background-color: var(--color-white);
+        color: var(--color-black);
     }
 }
