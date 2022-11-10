@@ -1,6 +1,6 @@
 :root {
   --color-white: hsl(0, 0%, 98%);
-  --color-gray: hsl(0, 0%, 41%);
+  --color-gray: hsl(0, 0%, 39%);
   --color-black: hsl(0, 0%, 8%);
   --font-family: "Epilogue", sans-serif;
 }
@@ -20,8 +20,11 @@ ul.navbar-nav li.nav-item a {
 ul.navbar-nav li.nav-item a:hover {
   color: var(--color-black);
 }
+ul.navbar-nav li.nav-item .nav-link .btn-outline-dark {
+  color: var(--color-gray);
+}
 ul.navbar-nav li.nav-item .nav-link .btn-outline-dark:hover {
-  outline: solid black 2px;
+  outline: solid var(--color-black) 2px;
   background-color: var(--color-white);
   color: var(--color-black);
 }
@@ -30,11 +33,34 @@ ul.navbar-nav .icon-nav {
   padding-right: 5px;
 }
 
-.container .btn-outline-dark:hover {
-  outline: solid black 2px;
+.container {
+  max-width: 80%;
+}
+@media all and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+.container .btn-reverse-color {
   background-color: var(--color-black);
   color: var(--color-white);
 }
+.container .btn-reverse-color:hover {
+  outline: solid black 2px;
+  background-color: var(--color-white) !important;
+  color: var(--color-black) !important;
+}
+.container section {
+  max-width: 100%;
+}
 .container section picture img {
   height: 80vh;
+}
+@media all and (max-width: 768px) {
+  .container section picture img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

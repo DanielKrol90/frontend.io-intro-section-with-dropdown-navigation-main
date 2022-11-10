@@ -31,11 +31,11 @@
         <div class="collapse navbar-collapse d-flex flex-row" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Features
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body rounded">
                 <li>
                   <a class="dropdown-item" href="#">
                     <img class="icon-nav" src="./images/icon-todo.svg" alt=""> Todo List
@@ -63,7 +63,7 @@
                 aria-expanded="false">
                 Company
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body rounded">
                 <li><a class="dropdown-item" href="#">History</a></li>
                 <li><a class="dropdown-item" href="#">Our Team</a></li>
                 <li><a class="dropdown-item" href="#">Blog</a></li>
@@ -92,35 +92,33 @@
   </header>
 
   <main>
-    <div class="container d-flex justify-content-between">
-      <section class=" d-flex flex-column align-items-start justify-content-between">
+    <div class="container d-flex justify-content-around order-2">
+      <section class="section-a col-6 d-flex flex-column align-items-start justify-content-between mt-5 mx-5">
         <h1 class="display-1 fw-bolder lh-1 mt-5">Make remote work</h1>
 
         <p class="w-75">Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
 
-        <button class="btn btn-outline-dark" type="button">Learn more</button>
+        <button class="btn btn-reverse-color" type="button">Learn more</button>
 
         <div class="d-flex flex-row justify-content-between w-100">
-          <img class="mx-0" src="./images/client-databiz.svg" alt="databiz">
-          <img class="mx-0" src="./images/client-audiophile.svg" alt="audio phile">
-          <img class="mx-0" src="./images/client-meet.svg" alt="meet">
-          <img class="mx-0" src="./images/client-maker.svg" alt="maker">
+          <img src="./images/client-databiz.svg" alt="databiz">
+          <img src="./images/client-audiophile.svg" alt="audio phile">
+          <img src="./images/client-meet.svg" alt="meet">
+          <img src="./images/client-maker.svg" alt="maker">
         </div>
 
       </section>
 
-      <section class="mx-5">
+      <section class="section-b col-6 mx-5 order-1">
         <picture>
           <source media="(min-width:375px)" srcset="./images/image-hero-desktop.png">
           <img src="./images/image-hero-mobile.png" alt="men writing on laptop in yellow ball">
         </picture>
       </section>
     </div>
-
   </main>
-
-
+  
 
 
 

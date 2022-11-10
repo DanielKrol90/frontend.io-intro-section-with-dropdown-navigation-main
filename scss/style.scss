@@ -1,11 +1,12 @@
 :root {
     // colors
     --color-white: hsl(0, 0%, 98%);
-    --color-gray: hsl(0, 0%, 41%);
+    --color-gray: hsl(0, 0%, 39%);
     --color-black: hsl(0, 0%, 8%);
 
     // fonts 
     --font-family: 'Epilogue', sans-serif;
+    
 }
 
 body {
@@ -28,11 +29,12 @@ ul.navbar-nav {
             }
         }
         .nav-link {
-
+            
             .btn-outline-dark {
+                color: var(--color-gray);
 
                 &:hover {
-                    outline: solid black 2px;
+                    outline: solid var(--color-black) 2px;
                     background-color: var(--color-white);
                     color: var(--color-black);
                 }
@@ -49,23 +51,37 @@ ul.navbar-nav {
     }
 }
 
+
 .container {
+    max-width: 80%;
 
+    @media all and (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+    }
 
-    .btn-outline-dark {
-    
+    .btn-reverse-color {
+        background-color: var(--color-black);
+        color: var(--color-white);
+
         &:hover {
             outline: solid black 2px;
-            background-color: var(--color-black);
-            color: var(--color-white);
+            background-color: var(--color-white) !important;
+            color: var(--color-black) !important;
         }
     }
     section {
-
+        max-width: 100%;
         picture {
             
             img {
                 height: 80vh;
+
+                @media all and (max-width:768px) {
+                    width: 100%;
+                }
             }
         }
     }
